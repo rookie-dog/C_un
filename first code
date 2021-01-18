@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <math.h>
+#include <string.h>
+int main(){
+  int a,b;
+  printf("Programming is fun.\n");
+  printf("Please input necessary information:\n");
+  sacnf("%d/t%d",&a,&b);
+  return a+b;               //返回a+b的值表明程序正常运行，其他值表示运行不正常
+}
