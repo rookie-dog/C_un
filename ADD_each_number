@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#include <string.h>
+
+int main(){
+	int N, right_n, sum;
+	_Bool t = 1;   //只有C语言中可用，C++中没有，需要包含头文件或者宏定义布尔型变量
+	printf("Please input a number:");
+	scanf_s("%i", &N);
+	sum = 0;
+	right_n = 0;
+	while (t){
+		right_n = N % 10;
+		sum += right_n;
+		N = N / 10;
+		if (N == 0)  break;
+	
+	}
+	printf("The sum is %i\n",sum);
+	return 0;
+
+}
